@@ -1,6 +1,6 @@
 /*Proxytia*/
 var nama = 'nuel';
-var peran = 'Penyihir';
+var peran = 'Archer';
 if(nama === ''){
     console.log('Nama harus diisi!');
 }else if (nama !== ''){
@@ -16,5 +16,7 @@ if(nama === ''){
     }else if(peran === 'Penyihir'){
         console.log('Selamat datang di Dunia Proxytia, ' + nama.toUpperCase());
         console.log('Halo ' + peran + ' ' + nama.toUpperCase() + ',' + 'ciptakan keajaiban yang membantu kemenanganmu!');
+    }else if(peran !== 'Ksatria' && peran !== 'Tabib' && peran !== 'Penyihir'){
+        console.log('Pilih peran yang disediakan,yaitu Ksatria - Tabib - Penyihir');
     }
 }
