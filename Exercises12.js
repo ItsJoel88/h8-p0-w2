@@ -1,11 +1,11 @@
 function konversiMenit(menit){
-    var jam = menit/60;
-    var b = Math.floor(jam);
-    var menit1 = (jam-b)*60;
-    var c = Math.floor(menit1);
-    if(c<10){
-        c = '0' + c;
+    var jam = Math.floor(menit/60);
+    var menit1 = menit % 60;
+    if(menit1 === 0){
+         menit1 += '0';
+    }else{
+         menit1;
     }
-    return b + ':' + c;
+    return jam + ':' + menit1;
 }
-console.log(konversiMenit(118));
+console.log(konversiMenit(135));
