@@ -3,9 +3,9 @@ function konversiMenit(menit){
     var menit1 = menit % 60;
     if(menit1 === 0){
          menit1 += '0';
-    }else{
-         menit1;
+    }else if(menit1 !== 0 && menit1<10){
+         menit1 = '0' + menit1
     }
     return jam + ':' + menit1;
 }
-console.log(konversiMenit(135));
+console.log(konversiMenit(123));
